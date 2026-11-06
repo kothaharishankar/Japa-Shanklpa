@@ -377,41 +377,13 @@ export const CounterScreen: React.FC<CounterScreenProps> = ({
           {/* Subtle Outer Wave Pulse */}
           <div className="absolute inset-0 rounded-full border-4 border-white/20 animate-pulse pointer-events-none" />
 
-          {/* Golden OM emblem inside button */}
-          <div className="w-11 h-11 mb-1 text-accent-gold flex items-center justify-center opacity-95 group-hover:scale-105 transition-transform">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <path
-                d="M 42 37 C 42 32 46.5 28.5 52 29.5 C 57 30.5 59 35 58 39.5 C 57 44 53 46 47 46.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="4.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M 47 46.5 C 38 48 34.5 55 35 62 C 35.5 69 42 74 50 74 C 59 74 64 68 64 60 C 64 53 58.5 48.5 51 47"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="4.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M 54 48 C 60 48.5 67 52 71 58 C 74 63 74 69 72 73"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="4.2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M 57 26.5 C 62 30 68 30 73 26.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="3.5"
-                strokeLinecap="round"
-              />
-              <circle cx="65" cy="20.5" r="3.2" fill="currentColor" />
-            </svg>
+          {/* Sacred Logo Emblem inside Button */}
+          <div className="w-14 h-14 mb-1.5 rounded-full overflow-hidden bg-white/95 p-1 shadow-md border border-white/40 flex items-center justify-center group-hover:scale-105 transition-transform">
+            <img
+              src="/icons/logo.jpg"
+              alt="Japa Sankalpa Sacred Logo"
+              className="w-full h-full object-contain select-none pointer-events-none"
+            />
           </div>
 
           <span className="text-lg sm:text-xl font-bold tracking-wide">
