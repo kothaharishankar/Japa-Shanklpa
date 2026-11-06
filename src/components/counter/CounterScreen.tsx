@@ -378,11 +378,39 @@ export const CounterScreen: React.FC<CounterScreenProps> = ({
           <div className="absolute inset-0 rounded-full border-4 border-white/20 animate-pulse pointer-events-none" />
 
           {/* Golden OM emblem inside button */}
-          <div className="w-10 h-10 mb-1 text-accent-gold flex items-center justify-center opacity-90 group-hover:scale-105 transition-transform">
-            <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
-              <path d="M 44 38 C 40 38 36 41 36 46 C 36 50 39 53 43 54 C 38 55 35 60 35 65 C 35 72 40 76 47 76 C 56 76 63 69 63 60 C 63 56 61 53 58 51 C 61 49 63 46 63 43 C 63 38 58 34 52 34 C 50 34 47 35 45 36" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round"/>
-              <path d="M 58 33 C 63 33 67 36 68 40" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-              <circle cx="68" cy="30" r="4" fill="currentColor" />
+          <div className="w-11 h-11 mb-1 text-accent-gold flex items-center justify-center opacity-95 group-hover:scale-105 transition-transform">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <path
+                d="M 42 37 C 42 32 46.5 28.5 52 29.5 C 57 30.5 59 35 58 39.5 C 57 44 53 46 47 46.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="4.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M 47 46.5 C 38 48 34.5 55 35 62 C 35.5 69 42 74 50 74 C 59 74 64 68 64 60 C 64 53 58.5 48.5 51 47"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="4.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M 54 48 C 60 48.5 67 52 71 58 C 74 63 74 69 72 73"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="4.2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M 57 26.5 C 62 30 68 30 73 26.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3.5"
+                strokeLinecap="round"
+              />
+              <circle cx="65" cy="20.5" r="3.2" fill="currentColor" />
             </svg>
           </div>
 

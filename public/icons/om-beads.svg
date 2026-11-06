@@ -1,37 +1,86 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <rect width="512" height="512" rx="128" fill="#176B45"/>
-  <!-- Japa Mala Beads Ring -->
-  <g fill="#EAF4EC" stroke="#145638" stroke-width="2">
-    <!-- 24 representative beads around circle -->
-    <circle cx="256" cy="70" r="14" fill="#C5A45A" /> <!-- Meru bead -->
-    <circle cx="304" cy="76" r="11" />
-    <circle cx="350" cy="95" r="11" />
-    <circle cx="390" cy="126" r="11" />
-    <circle cx="421" cy="166" r="11" />
-    <circle cx="439" cy="212" r="11" />
-    <circle cx="442" cy="260" r="11" />
-    <circle cx="431" cy="307" r="11" />
-    <circle cx="406" cy="349" r="11" />
-    <circle cx="370" cy="384" r="11" />
-    <circle cx="325" cy="410" r="11" />
-    <circle cx="276" cy="423" r="11" />
-    <circle cx="226" cy="423" r="11" />
-    <circle cx="177" cy="410" r="11" />
-    <circle cx="132" cy="384" r="11" />
-    <circle cx="96" cy="349" r="11" />
-    <circle cx="71" cy="307" r="11" />
-    <circle cx="60" cy="260" r="11" />
-    <circle cx="63" cy="212" r="11" />
-    <circle cx="81" cy="166" r="11" />
-    <circle cx="112" cy="126" r="11" />
-    <circle cx="152" cy="95" r="11" />
-    <circle cx="198" cy="76" r="11" />
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E7A50" />
+      <stop offset="100%" stop-color="#145638" />
+    </radialGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DE9C" />
+      <stop offset="50%" stop-color="#C5A45A" />
+      <stop offset="100%" stop-color="#8C6F2A" />
+    </linearGradient>
+    <linearGradient id="beadGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EAF4EC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Sacred Emerald Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGlow)"/>
+
+  <!-- Subtle Outer Sacred Geometry Halo -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.15" />
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#C5A45A" stroke-width="3" stroke-dasharray="4 8" stroke-opacity="0.6" />
+
+  <!-- 26 Sacred Mala Beads in Soft White-Green -->
+  <g fill="url(#beadGradient)" stroke="#145638" stroke-width="3">
+    <circle cx="301" cy="65" r="13" />
+    <circle cx="344" cy="81" r="13" />
+    <circle cx="381" cy="106" r="13" />
+    <circle cx="412" cy="139" r="13" />
+    <circle cx="435" cy="178" r="13" />
+    <circle cx="448" cy="222" r="13" />
+    <circle cx="450" cy="267" r="13" />
+    <circle cx="443" cy="311" r="13" />
+    <circle cx="424" cy="353" r="13" />
+    <circle cx="397" cy="390" r="13" />
+    <circle cx="363" cy="419" r="13" />
+    <circle cx="323" cy="439" r="13" />
+    <circle cx="279" cy="449" r="13" />
+    <circle cx="233" cy="449" r="13" />
+    <circle cx="189" cy="439" r="13" />
+    <circle cx="149" cy="419" r="13" />
+    <circle cx="115" cy="390" r="13" />
+    <circle cx="88" cy="353" r="13" />
+    <circle cx="69" cy="311" r="13" />
+    <circle cx="62" cy="267" r="13" />
+    <circle cx="64" cy="222" r="13" />
+    <circle cx="77" cy="178" r="13" />
+    <circle cx="100" cy="139" r="13" />
+    <circle cx="131" cy="106" r="13" />
+    <circle cx="168" cy="81" r="13" />
+    <circle cx="211" cy="65" r="13" />
   </g>
-  <!-- Sacred OM Symbol in Center -->
-  <path d="M 230 185 C 210 185 195 200 195 220 C 195 238 208 252 225 255 C 200 260 185 280 185 305 C 185 335 210 355 245 355 C 285 355 315 325 315 285 C 315 270 305 255 290 248 C 302 238 310 225 310 210 C 310 185 285 165 255 165 C 250 165 240 167 235 170" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Om upper crescent and bindu -->
-  <path d="M 290 165 C 310 165 328 175 335 190" fill="none" stroke="#C5A45A" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="335" cy="155" r="10" fill="#C5A45A"/>
-  <!-- Om right tail curve -->
-  <path d="M 270 260 C 310 260 340 280 345 325" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Golden Sumeru / Meru Bead with Sacred Finial at Top -->
+  <g>
+    <!-- Sacred Tassel -->
+    <path d="M 248 84 L 256 102 L 264 84 Z" fill="url(#goldGradient)" />
+    <!-- Meru Bead -->
+    <circle cx="256" cy="60" r="22" fill="url(#goldGradient)" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="249" cy="53" r="6" fill="#FFFFFF" opacity="0.6" />
+  </g>
+
+  <!-- Sacred Calligraphic Om (ॐ) in Center -->
+  <g>
+    <!-- Upper-left curve -->
+    <path d="M 215 190 C 215 162 238 145 266 150 C 292 155 302 178 297 201 C 292 224 271 234 241 237" 
+          fill="none" stroke="#FFFFFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Lower-left sweeping curve and inner loop -->
+    <path d="M 241 237 C 195 245 177 281 180 316 C 182 352 215 377 256 377 C 302 377 328 346 328 306 C 328 270 300 247 262 240" 
+          fill="none" stroke="#FFFFFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Right tail curve (soaring curve) -->
+    <path d="M 276 245 C 307 248 343 266 363 296 C 379 322 379 352 368 373" 
+          fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Sacred Candra (Crescent) in Gold -->
+    <path d="M 292 135 C 318 153 348 153 374 135" 
+          fill="none" stroke="url(#goldGradient)" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Sacred Bindu (Supreme Dot) in Gold -->
+    <circle cx="333" cy="105" r="14" fill="url(#goldGradient)" />
+    <circle cx="329" cy="101" r="4" fill="#FFFFFF" opacity="0.8" />
+  </g>
 </svg>
